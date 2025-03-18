@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        /* CSS para o layout e estilo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: #fff;
+        }
+
+        header {
+            background-color: #141414;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header img {
+            width: 120px;
+        }
+
+        .banner {
+            position: relative;
+            height: 450px;
+            background: url('https://image.tmdb.org/t/p/original/x6wRzFqXYs5YqopIZy4oAcx9mSx.jpg') center/cover no-repeat;
+            color: #fff;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 30px;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .banner p {
+            font-size: 1.5rem;
+            max-width: 500px;
+        }
+
+        .row {
+            display: flex;
+            padding: 20px;
+            overflow-x: scroll;
+            margin: 20px 0;
+        }
+
+        .row img {
+            height: 200px;
+            margin-right: 10px;
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .row img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #141414;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="nav-bar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Netflix_logo.svg" alt="Logo Netflix">
+            <div>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Minha Lista</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <div>
+            <h1>O Irlandês</h1>
+            <p>Frank Sheeran olha para trás em sua vida de crime, refletindo sobre seu tempo com a máfia e o mistério por trás do desaparecimento de Jimmy Hoffa.</p>
+            <button>Assistir</button>
+        </div>
+    </section>
+
+    <!-- Filmes em Destaque -->
+    <section>
+        <div class="row">
+            <img src="https://image.tmdb.org/t/p/original/lbXr0tCw5CrWlgphAELJ9PyaJ2y.jpg" alt="Filme 1">
+            <img src="https://image.tmdb.org/t/p/original/d88sFFwOp1BGqgsI2E5FCciWx13.jpg" alt="Filme 2">
+            <img src="https://image.tmdb.org/t/p/original/lbXr0tCw5CrWlgphAELJ9PyaJ2y.jpg" alt="Filme 3">
+            <img src="https://image.tmdb.org/t/p/original/d88sFFwOp1BGqgsI2E5FCciWx13.jpg" alt="Filme 4">
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Feito com ❤️ para fins educacionais.</p>
+    </footer>
+
+    <script>
+        // Exemplo de interatividade com JS
+        document.querySelector('button').addEventListener('click', function() {
+            alert('Redirecionando para a página de reprodução...');
+        });
+    </script>
+    
+</body>
+</html>
